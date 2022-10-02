@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>finalurijs</title>
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="tittle"><h1>MYPROJECT</h1></a>
+        <nav class="menu">
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+        </ul>
+    </nav>
+
+
+   
+  
+    <div class="topnav">
+  <a href="index.html" class="active">js</a>
+  <div id="myLinks">
+    <a href="about.html">About</a>
+    <a href="product.html">Product</a>
+    <a href="registration.html">Registration</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+    </header>
+    <section class="img">
+        <img src="../finalurijs/img/moon.png" alt="" id="moon">
+        <img src="../finalurijs/img/stars.webp" alt="" id="stars">
+        <img src="../finalurijs/img/ships.png" alt="" id="ship">
+        <img src="../finalurijs/img/Town.jpeg" alt="" id="town">
+        <img src="../finalurijs/img/shooting star.png" alt="" id="shoot">
+    </section>
+
+  
+    <main>
+        <div id="count_visit"></div>
+        <div class="filter">
+        <input type="text" id="myInput" onkeyup="ourFunction()" placeholder="Search for names.."/>
+<ul id="myUL">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+<div id="demo">
+    <h4>Json-server</h4>
+    <p class="json"><label for="title">Title</label>
+       <input type="text" name="title" id="title" >
+    </p>
+    <p class="json"> <label for="body">Body</label>
+     <input type="text" name="body" id="body"><br>
+    </p>
+
+     <div class="jsn3">
+    <p class="jsn1">
+     <button type="button" id="saveButton" class="button__add"> post</button>
+    </p>
+     
+    <div id="posts" class="jsn2">
+    <p>
+      <button type="button" class="button__delete" id="deleteButton">delete post</button>
+    </p>
+    </div>
+    </div> 
+    
+</div>
+   
+</div>
+    </main>
+    <footer></footer>
+    <script src="java script/js.js"></script>
+    <script src="java script/storage.js"></script>
+    <script src="java script/filter.js"></script>
+    <script src="java script/fetch.js"></script>
+    <script src="java script/burger.js"></script>
+</body>
+</html>

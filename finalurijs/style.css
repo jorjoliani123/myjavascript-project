@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#010122, #000222, #030128, #05002d, #080030, #0b0037, #140046, #17014f, #260164, #310377);
+}
+
+header{
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    color: aliceblue;
+    letter-spacing: 20px;
+    display: flex;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+
+
+header ul li{
+    margin-left: 40px;
+}
+
+header ul li a{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover , header ul li a.active{
+    background-color: aliceblue;
+    color: rgb(9, 9, 120);
+}
+
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+}
+
+section img#stars{
+    left: -100px;
+}
+
+section img#moon{
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: screen;
+    left: 166px;
+    top: 116px;
+    z-index: 12;
+}
+
+section img#shoot{
+    width: 100px;
+    height: auto;
+    mix-blend-mode: screen;
+    left: 0%;
+    top: 116px;
+}
+section img#ship{
+    width: 300px;
+    height: auto;
+    bottom: 70px;
+    left: 130px;
+    mix-blend-mode: screen;
+    z-index: 11;
+}
+
+.sec{
+    padding: 100px;
+    color: aliceblue;
+    position: relative;
+    width: 100%;
+}
+
+.sec h2{
+    font-size: 50px;
+}
+.sec p{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.sec::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top , #000222, #010122, #2780ba, #417bba, #2391c4);
+}
+.topnav{
+    display: none;
+}
+.producti{
+    width: 800px;
+    height: 500px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    border-radius: 10px;
+}
+
+.slider-wraper {
+    position: relative;
+}
+.slide {
+    width: 100%;
+}
+.flex{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slider-content {
+    position: relative;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(115, 115, 218);
+    color:#fff;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.arrow-left {
+    left: 30px;
+}
+.arrow-right {
+    right: 30px;
+}
+.slider-title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(27, 17, 50);
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(207, 13, 214);
+    border-radius: 50%;
+    margin: 8px;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #fff;
+    border: 2px solid blue;
+}
+.dotsParent {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+
+.form{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 10px;
+}
+#email {
+    width: 100%;
+}
+.input-box {
+    position: relative;
+}
+
+#form.invalid .input-box::before {
+    content: '\2612';
+    position: absolute;
+    right: 20px;
+}
+#form.valid .input-box::before {
+    content: '\2611';
+    position: absolute;
+    right: 20px;
+}
+#text {
+    display: block;
+}
+
+#top {
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: lightblue;
+}
+
+#username{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#email{
+    width: 100%; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#passw{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+label{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+#passw2{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#error_password2{
+    width: 100%;
+    border-radius: 10px;
+}
+.error-text{
+    background-color: #eee;
+}
+.btn{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+#toggleIcon{
+    background-color: aliceblue;
+    font-size: 30px;
+    margin:  5px;
+}
+
+.storage{
+    display: none;
+}
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 100%;
+  }
+  
+  .accord{
+    position: absolute;
+    top: 200px;
+    width: 900px;
+    height: 800px;
+    left: 23%;
+  }
+
+  .accord1{
+    margin: 20px;
+    width: 100%;
+  }
+  .accord2{
+    margin: 20px;
+    width: 100%;
+  }
+
+  .accord3{
+    margin: 20px;
+    width: 100%;
+  }
+  .acord-tittle{
+    color:rgb(248, 73, 73);
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+ 
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 900px;
+    margin-left: 20px;
+    height: 30px;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 2px solid rgb(255, 255, 255); 
+    margin-bottom: 12px; 
+    background-color:aliceblue
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+
+  
+  
+  
+  .filter{
+    position: absolute;
+    top: 120px;
+    right: 4%;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #ffffff; 
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    display: block; 
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: rgb(255, 223, 223); 
+  }
+
+
+#demo{
+  position: absolute;
+  top: 650px;
+  padding-bottom: 30px;
+  right: 900px;
+}
+h4{
+    color: aliceblue;
+    font-size: 50px;
+}
+.json{
+    width: 100px;
+    padding-top: 10px;
+}
+.jsn1{
+    float: left;
+    padding-right: 20px;
+}
+.jsn3{
+    padding-top: 15px;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display: none;
+  }
+  
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+
+  @media only screen and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        background: linear-gradient(#010122, #000222, #030128, #05002d, #080030, #0b0037, #140046, #17014f, #260164, #310377);
+    }
+    
+    header{
+        position: absolute;
+        z-index: 15;
+        width: 100%;
+        padding: 50px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header h1{
+        color: aliceblue;
+        letter-spacing: 20px;
+        position: absolute;
+        left: 25px;
+    }
+    header ul{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 25px;
+    }
+    
+    
+    
+    header ul li{
+        margin-left: 25px;
+    }
+    
+    header ul li a{
+        color: aliceblue;
+        font-size: 20px;
+        padding: 5px 15px;
+        border-radius: 20px;
+    }
+    
+    header ul li a:hover , header ul li a.active{
+        background-color: aliceblue;
+        color: rgb(9, 9, 120);
+    }
+    
+    
+    
+    
+    section{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    section img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+    }
+    
+    section img#stars{
+        left: -100px;
+    }
+    
+    section img#moon{
+        width: 200px;
+        height: 200px;
+        mix-blend-mode: screen;
+        left: 166px;
+        top: 116px;
+    }
+    
+    section img#shoot{
+        width: 100px;
+        height: auto;
+        mix-blend-mode: screen;
+        left: 0%;
+        top: 116px;
+    }
+    section img#ship{
+        width: 300px;
+        height: auto;
+        bottom: 70px;
+        left: 130px;
+        mix-blend-mode: screen;
+    }
+    
+    .sec{
+        padding: 100px;
+        color: aliceblue;
+        position: relative;
+        display: none;
+    }
+    
+    .sec h2{
+        font-size: 40px;
+        position: absolute;
+        left: 15px;
+    }
+    .sec p{
+        font-size: 25px;
+        top: 25px;
+        position: absolute;
+        left: 15px;
+    
+    }
+    
+    #demo{
+     position: absolute;
+     right: 420px;
+    }
+    .accord{
+        height: 500px;
+        position: absolute;
+        left: 4%;
+
+    }
+    .panel{
+        width: 900px;
+    }
+    .form{
+        position: absolute;
+        left: 32%;
+    }
+    .producti{
+        position: absolute;
+        left: 10%;
+    }
+    #ship{
+        display: none;
+    }
+  }
+    
+  @media only screen and (max-width: 768px) {
+    .tittle{
+        padding-bottom: 150px;
+        font-size: 20px;
+        position: absolute;
+        left: 20%;
+        padding-top: 60px;
+        
+    }
+    .menu{
+        padding-top: 80px;
+        position: absolute;
+        left: 90%;
+    }
+    .filter{
+        padding-top: 50px;
+    }
+    .accord{
+        width: 500px;
+        position: absolute;
+        left: 15%;
+    }
+    .form{
+        position: absolute;
+        left: 23%;
+    }
+    .producti{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 25%;
+        top: 27%;
+    }
+   
+   .arrow-left{
+    position: absolute;
+    top: 80%;
+   }
+
+   .arrow-right{
+    position: absolute;
+    top: 80%;
+   }
+
+   #ship{
+    display: none;
+   }
+
+   .dotsParent{
+        position: absolute;
+        top: 150%;
+   }
+    .slider-content{
+        width: 400px;
+        height: 300px;
+    }
+    .slider-wraper{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        bottom: 20px;
+
+    }
+    .panel{
+        width: 500px;
+    }
+
+    #demo{
+        position: absolute;
+        right: 200px;
+    }
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    .menu{
+        display: none;
+    }
+    .tittle{
+        font-size: 10px;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .filter{
+        position: absolute;
+        right: 20%;
+        top: 250px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      
+      
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      
+      .topnav a.icon {
+        background: rgb(0, 165, 61);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .accord{
+        width: 300px;
+      }
+      .panel{
+        width: 300px;
+      }
+
+      .producti{
+        position: absolute;
+        left: 40px;
+      }
+      .form{
+        position: absolute;
+        left:  35px;
+      }
+      #demo{
+       position: absolute;
+       left: -100px;
+      }
+      #postsSelect{
+       width: 400px;
+      }
+  }
+
+  

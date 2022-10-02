@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <title>finalurijs</title>
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="tittle"><h1>MYPROJECT</h1></a>
+        <nav class="menu">
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+        </ul>
+    </nav>
+    <div class="topnav">
+        <a href="index.html" class="act">js</a>
+        <div id="myLinks">
+          <a href="about.html">ABOUT</a>
+          <a href="product.html">PRODUCT</a>
+          <a href="registration.html">REGISTRATION</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <section class="img">
+        <img src="../finalurijs/img/moon.png" alt="" id="moon">
+        <img src="../finalurijs/img/stars.webp" alt="" id="stars">
+        <img src="../finalurijs/img/ships.png" alt="" id="ship">
+        <img src="../finalurijs/img/Town.jpeg" alt="" id="town">
+        <img src="../finalurijs/img/shooting star.png" alt="" id="shoot">
+    </section>
+
+    <div class="sec">
+        <h2>paralax scroling</h2>
+        <p>If You Are Looking For Product, Visit Our Website!</p>
+    </div>
+    <main>
+        <div class="form">
+            <form action="" method="" id="registration">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username"/>
+                    <div class="error-text" id="error-username"></div>
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" onkeydown="validationEmail()"/>
+                    <div class="error-text" id="error-myemail"></div>
+                    
+                </div>
+
+                <div>
+                    <label for="passw">Password</label>
+                    <input type="password" id="passw" name="password" placeholder="Enter your password">
+                    <i id="toggleIcon" class="fa-solid fa-eye"></i>
+                    <div class="error-text" id="error_password"></div>
+                  </div>
+                  <div>
+                    <label for="passw2">Repeat Password</label>
+                    <input type="password" id="passw2" name="password2" placeholder="repeat your password">
+                    <div class="error-text" id="error_password2"></div>
+                  </div>
+
+               
+
+                <div>
+                    <input type="radio" name="gender" id=""/>
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id=""/>
+                    <label for="radio">Famale</label>
+                    <div class="error-text" id="error_gender"></div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="agree" id="agree"/>
+                    <label for="">I agree terms and conditions</label>
+                    <div class="error-text" id="error_agree"></div>
+                </div>
+
+                <button type="submit" class="btn">Submit Form</button>
+
+               
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="java script/js.js"></script>
+    <script src="java script/registration.js"></script>
+    <script src="java script/burger.js"></script>
+</body>
+</html>
